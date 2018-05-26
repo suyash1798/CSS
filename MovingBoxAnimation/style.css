@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	padding-top: 80px;
+
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	border-bottom: 3px dashed red;
+}
+
+.path{
+	height: 150px;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	background-color: red;
+}
+
+.box{
+	margin: 5px;
+
+	height: 100%;
+	width: 80px;
+	background-color: #ffffff;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	animation-name: boxmove;
+	animation-duration: 2s;
+	animation-delay: ease;
+}
+
+@keyframes boxmove{
+	0%{
+
+	}
+	50%{
+		position: relative;
+		left: calc(100% - 5px);
+	}
+}
